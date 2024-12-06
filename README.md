@@ -30,6 +30,7 @@ Where you can create your own character, explore the games classes, monsters, ra
     - [Accessibility](#accessibility)
         - [ARIA Labels and Keyboard Navigation](#aria-labels-and-keyboard-navigation)
         - [Accessibility Mode](#accessibility-mode)
+        - [Screen Reader](#screen-reader)
     - [Sustainability](#sustainability)
         - [Optimized Image Handling](#optimized-image-handling)
         - [Efficient API Usage](#efficient-api-usage)
@@ -298,6 +299,9 @@ images
 - **Accessibility Mode:** A dedicated accessibility mode is available via a toggle button in the navigation bar and on
   the login page. This mode adjusts the user interface by removing background images and applying a black background,
   making text and buttons more distinguishable and easier to interact with for users with visual impairments.
+
+### Screen Reader
+- **Screen Reader Only (sr-only):** Some visual elements, such as figure captions and non-visible text, are hidden using sr-only styling to ensure they are accessible to screen readers without interfering with the visual layout.
 
 ## Sustainability
 
