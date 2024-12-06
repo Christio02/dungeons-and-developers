@@ -26,7 +26,7 @@ const RaceCard = ({ id, index, name, alignment, size, speed, selectedRaceId, onS
 
   return (
     <motion.article
-      className="flex flex-col xl:flex-row xl:h-90 w-full justify-between items-center p-8 xl:p-12 rounded-lg bg-black bg-opacity-90 gap-10 card"
+      className="flex flex-col xl:flex-row xl:h-90 w-full justify-between items-center p-8 xl:p-12 rounded-lg bg-black bg-opacity-90 gap-10 card z-10"
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, amount: 0.1 }}
@@ -40,8 +40,8 @@ const RaceCard = ({ id, index, name, alignment, size, speed, selectedRaceId, onS
       aria-describedby={`${id}-details`}
     >
       <div className="flex flex-col xl:flex-row gap-5 justify-center items-center ">
-        <figure className="max-w-36 xl:max-w-28">
-          <img src={raceImage} alt={`${name} race illustration`} className="shadow-none" />
+        <figure className="min-w-36 xl:min-w-28">
+          <img src={raceImage} alt={`${name} race illustration`} className="w-36 xl:w-28 h-auto shadow-none" />
           <figcaption className="sr-only">{name}</figcaption>
         </figure>
         <div role="group">

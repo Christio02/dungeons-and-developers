@@ -174,7 +174,7 @@ const Navbar = () => {
                     <li className="w-fit">
                       <CustomButton text={'Classes'} linkTo={'/class'} isActive={location.pathname === '/class'} />
                     </li>
-                    <li className="w-fit">
+                    <li className="w-fit text-nowrap">
                       <CustomButton
                         text={'Ability Scores'}
                         linkTo={'/abilityscore'}

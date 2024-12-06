@@ -7,7 +7,7 @@ import { ReviewType } from '../interfaces/ReviewProps.ts';
  * Implements authorization, caching
  * **/
 const httpLink = createHttpLink({
-  uri: 'http://localhost:3001/graphql',
+  uri: 'http://localhost:4000/graphql',
 });
 /**
  * Configures authorization by given the 'Bearer' token to the request header.

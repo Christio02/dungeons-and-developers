@@ -27,7 +27,7 @@ const ClassCard = ({ id, name, hit_die, index, skills = [], selectedClassId, onS
 
   return (
     <motion.article
-      className="flex flex-col xl:flex-row xl:h-60 w-full justify-between items-center p-8 xl:p-12 rounded-lg bg-black bg-opacity-90 gap-10 card"
+      className="flex flex-col xl:flex-row min-h-fit w-full justify-between items-center p-8 xl:p-12 rounded-lg bg-black bg-opacity-90 gap-10 card z-10"
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, amount: 0.2 }}
@@ -41,8 +41,8 @@ const ClassCard = ({ id, name, hit_die, index, skills = [], selectedClassId, onS
       aria-describedby={`${id}-details`}
     >
       <div className="flex flex-col xl:flex-row gap-5 justify-center items-center">
-        <figure className="max-w-44">
-          <img src={classImage} alt={`${name} class illustration`} className="shadow-none" />
+        <figure className="min-w-44">
+          <img src={classImage} alt={`${name} class illustration`} className="shadow-none w-44" />
           <figcaption className="sr-only">{name}</figcaption>
         </figure>
         <div role="group">
